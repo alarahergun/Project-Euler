@@ -1,4 +1,6 @@
-# alala-the-totoro
+# PROJECT EULER 
 
 
-bu benim ilk kodum? anlamaya çalışıyorum. 
+Bu kısımda Project Euler için C'de kendi yazdığım kodları biriktiriyorum.
+
+In this section, I save my C codes for the Project Euler.
