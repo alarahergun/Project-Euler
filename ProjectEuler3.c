@@ -7,31 +7,24 @@ The prime factors of 13195 are 5, 7, 13 and 29.
 
 What is the largest prime factor of the number 600851475143 ?  */
 
-int main()
+int main() {
 
-{
- unsigned long long int number = 600851475143; 
- int i = 3; 
- int max = 0;
-
-
- while (1)
- {
-  while (number % i != 0) 
-  {
-	number /= i; 
-    max = i; 
-  }
-  
-  if (number == 1)
-   break;
-
-
-  i = i+2; 
- }
-
-
- printf("Highest prime factor of 600851475143 is %d\n", max);
- return 0;
+unsigned long long int n = 600851475143;
+long int div=2, ans = 0, maxFact;
+   
+while(n!=0) {
+      if(n % div !=0)
+         div = div + 1;
+      else {
+         maxFact = n;
+         n = n / div;
+         if(n == 1) {
+            printf("%d is the largest prime factor !",maxFact);
+            ans = 1;
+            break;
+         }
+      }
+   }
+   return 0;
 }
 
